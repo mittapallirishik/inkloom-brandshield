@@ -326,4 +326,4 @@ with testing_tab:
             st.error(f"{passed}/{total} tests passed. Investigate failures before submission.")
 
 st.divider()
-st.caption("Inkloom BrandShield prototype • Rule-based checks • Human verification required • Demo facts are fictional • Local JSON persistence depends on the deployment environment")
+st.caption("Inkloom BrandShield prototype • Rule-based checks • Human verification required • Demo facts are fictional  • Local JSON persistence depends on the deployment environment")
