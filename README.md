@@ -1,62 +1,44 @@
-# inkloom-brandshield
-Evidence-to-Action Governance Loop for marketing content review and brand compliance.
-# Inkloom BrandShield 🛡️
+# Inkloom BrandShield
 
-**An Evidence-to-Action Governance Loop for marketing content.**
+**Evidence-to-Action Governance Loop**
 
-Inkloom BrandShield is a prototype designed to help reviewers identify potential brand-compliance issues in marketing content using approved brand facts and configurable rules.
+Inkloom BrandShield is a prototype tool for reviewing marketing content against configurable brand rules and approved product facts.
 
-## Problem
+## Features
 
-Marketing content can contain unsupported product claims, prohibited terminology, or missing required disclaimers. Reviewing these issues manually can be inconsistent and time-consuming.
+- Guided sample marketing drafts
+- Detection of configured prohibited phrases
+- Checks for required disclaimers
+- Approved-fact mismatch alerts for human verification
+- Explainable, rule-based Risk Radar
+- Reviewer decisions and notes
+- Review history with timestamps and unique IDs
+- JSON export for brand facts and review history
+- Five built-in self-tests
 
-## Our Solution
-
-BrandShield provides a simple review workflow that:
-
-- Maintains a library of approved brand facts and source references.
-- Flags configured prohibited terms.
-- Checks for required phrases.
-- Identifies claims that may need verification against approved facts.
-- Supports human reviewer decisions and notes.
-- Stores approved facts and review history in local JSON files.
-
-## Technology Stack
+## Technology
 
 - Python
 - Streamlit
-- JSON-based local storage
+- JSON-based local file storage
 
-## Run Locally
+## Run locally
 
-1. Install Python.
-2. Download or clone this repository.
-3. Install the dependencies:
+Install dependencies:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+`pip install -r requirements.txt`
 
-4. Start the application:
+Start the app:
 
-   ```bash
-   streamlit run app.py
-   ```
+`streamlit run app.py`
 
-5. Open the local URL shown in your terminal.
+## Limitations
 
-## Current Limitations
+Rule-based checks do not establish factual truth or full legal compliance. Risk Radar is a heuristic indicator, not a validated probability of harm. Local JSON storage may not persist across hosted restarts or redeployments.
 
-- The prototype uses rule-based checks, not a trained AI model.
-- Claim matching is basic and does not establish whether a claim is true or false.
-- Demo product facts are fictional and must not be treated as real product evidence.
-- Local JSON storage is not a shared database.
-- Human verification is required before approving marketing content.
+## Author
 
-## Project Status
-
-Working prototype under development. Planned improvements include stronger claim verification, automated tests, improved review workflows, and deployment options.
-
-## Responsible Use
-
-BrandShield provides decision support. Reviewers should verify claims against authentic sources before making final decisions.
+MITTAPALLI RISHIK
+BVRIT, Narsapur
+MITTAPALLI RISHIK  
+BVRIT, Narsapur
